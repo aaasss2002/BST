@@ -6,18 +6,19 @@ class BST
 private:
 	struct node
 	{
-		int key;
 		node* left;
 		node* right;
+		int key;
 	};
 
 	node* root;
 
+	void AddLeafPrivate(int key, node* n);
+
 public:
 	BST();
-	node* createLeaf(int key);
-
-
+	node* CreateLeaf(int key);
+	void AddNode(int key);
 };
 
 #endif
