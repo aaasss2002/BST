@@ -21,4 +21,5 @@ public:
 	void AddNode(int key);
 };
 
+// some comment
 #endif
